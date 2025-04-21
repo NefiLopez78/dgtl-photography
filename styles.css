@@ -125,6 +125,7 @@ p{
     pointer-events: none;
     transition: all .4s;
     margin-bottom: 16px;
+    z-index: 999;
 }
 
 .to-top.active{
@@ -173,6 +174,7 @@ nav{
 .nav-child{
     display: flex;
     align-items: center;
+    padding-top: 20px;
 }
 
 .nav-child img{
@@ -198,13 +200,13 @@ nav{
 
 .nav-child i{
     font-size: 2rem;
-    margin: 1rem;
+    margin-right: 1rem;
 }
 
 .icon-container i{
     font-size: 3em;
     margin: 1rem;
-    margin-right: 8rem;
+    margin-right: 30px;
 
 }
 
@@ -223,6 +225,7 @@ nav{
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    font-size: 2em;
 }
 
 .overlay-text a{
@@ -298,6 +301,12 @@ section{
     margin-top: 3rem;
     font-size: 1.5em;
     letter-spacing: .1rem;
+    transition: .3s ease-in-out;
+}
+
+.container a:hover{
+    -webkit-transform: scale(1.05);
+	transform: scale(1.05);
 }
 
 br{
@@ -306,9 +315,21 @@ br{
     margin: 28px;
 }
 
+.carousel{
+    padding-top: 100px;
+}
+
+.carousel h1{
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 200;
+    padding-bottom: 85px;
+    color: var(--brown);
+}
+
 .slider{
     min-width: 320px;
-    max-width: 100vh;
+    max-width: 1024px;
     height: 100vh;
     margin: auto;
     position: relative;
@@ -319,16 +340,16 @@ br{
     position: absolute;
     top: 0;
     left: 0;
-    height: 100%;
+    height: 100vh;
     display: flex;
     width: max-content;
     transition: 1s;
 }
 
 .list img{
-    width: 1300px;
-    max-width: 100vw;
-    height: 100%;
+    width: 100vw;
+    max-width: 1024px;
+    height: 100vh;
     object-fit: cover;
 }
 
@@ -399,6 +420,12 @@ br{
     border-radius: 5rem;
     box-shadow: var(--box-shadow);
     margin: 50px 25px;
+    transition: .3s ease-in-out;
+}
+
+.img-gallery-1:hover, .img-gallery-2:hover, .img-gallery-3:hover, .img-gallery-4:hover{
+    -webkit-transform: scale(1.05);
+	transform: scale(1.05);
 }
 
 .img-gallery h2{
@@ -409,6 +436,8 @@ br{
     display: block;
     font-size: 2.2rem;
 }
+
+
 
 .social-media-section{
     background-color: var(--med-brown);
@@ -457,79 +486,28 @@ footer{
 
 .footer-container a{
     text-decoration: none;
+    font-weight: 100;
     color: var(--light-brown);
 }
+
+.footer-container a:hover{
+    font-weight: 600;
+}
+
 .social-icon i{
     font-size: 3.5rem;
     padding: 0 20px;
+    transition: .3s ease-in-out;
 }
 
-/*
-nav{
-    font-size: 24px;
-    display: flex;
-    background-color: transparent;
-    position: absolute;
-    z-index: 10;
+.social-icon i:hover{
+    -webkit-transform: scale(1.05);
+	transform: scale(1.05);
 }
 
-nav ul{
-    list-style: none;
-    display: flex;
-    margin-right: 6em;
-}
-
-nav .nav-logo{
-    flex: 1;
-    padding: 20px 0px 10px 95px;
-}
-
-nav li{
-    padding: 2em 2em;
-}
-
-nav a{
-    display: flex;
-    text-decoration: none;
-    color: var(--brown);
-    transition: all 250ms;
-}
-
-nav a:hover{
-    border-bottom: 2px solid var(--brown);
-}
-
-#open-sidebar-btn{
-    display: none;
-    background: none;
-    border: none;
-    padding: 1em;
-    margin-left: auto;
-    cursor: pointer;
-}
-
-#close-sidebar-btn{
-    display: none;
-    background: none;
-    border: none;
-    padding: 1em;
-    cursor: pointer;
-}
-
-#overlay{
-    position: fixed;
-    inset: 0;
-    z-index: 9;
-    background: rgba(0, 0, 0, 0.5);
+hr{
     display: none;
 }
-
-body{
-    background-image: url(get_1920.jpg);
-    height: 100vh;
-    object-fit: cover;
-}
-*/
 
 
 
@@ -547,7 +525,7 @@ body{
         width: 70vw;
         max-width: 500px;
         height: auto;
-        max-width: 500px;
+        max-height: 500px;
     }
 
 
@@ -561,65 +539,117 @@ body{
 }
 
 @media screen and (min-width:768px) {
-    
-}
-
-@media screen and (min-width:768px) {
 
     .nav-child i{
         display: none;
     }
+
+    .img-gallery{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.8rem .8rem;
+        place-items: center;
+        margin: 0;
+    }
+
+    .img-gallery img{
+        width: 40vw;
+        max-width: 380px;
+        height: auto;
+    }
+
+    .link-img {
+        display: flex;
+    }
+
+    .link-img img{
+        max-width: 300px;
+    }
+
+    footer ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 1024px;
+        margin: auto;
+    }
+
+    hr{
+        display: block;
+        width: 80vw;
+        max-width: 1024px;
+        margin: auto;
+        height: 2px;
+        background-color: var(--light-brown);
+    }
+
+    .intro-text{
+        padding: 15px 0;
+    }
     
+    .intro h1{
+        font-size: 3.5rem;
+    }
+    
+    .intro-text h2{
+        margin: 18px 0;
+        font-size: 2.6em;
+    }
+
+    .intro-text p{
+        font-size: 1.75em;
+    }
+    .container a{
+        padding: 15px 35px;
+        margin-top: 3.5rem;
+        font-size: 1.75em;
+    }
+
+    .carousel h1{
+        font-size: 3.5rem;
+    }
+
+    .img-container h1{
+        font-size: 3.5rem;
+    }
+    
+    .social-media-section h1{
+        font-size: 2.5rem;
+    }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
 
     .nav-child a{
         display: none;
     }
-
-
-
-
-
-    /*
-    #open-sidebar-btn, #close-sidebar-btn{
-        display: block;
-    }
-
-    nav{
-        position: fixed;
-        top: 0;
-        right: -100%;
-        height: 100vh;
-        width: min(15em, 100%);
-        z-index: 10;
-        border-left: 1px solid black;
-        transition: right 300ms ease-out;
-        background-color: var(--light-brown) ;
-    }
-
-    nav.show{
-        right: 0;
-    }
-
-    nav.show ~ #overlay{
-        display: block;
-    }
-
-    nav .nav-logo{
-        display: none;
-    }
-
-    nav ul{
-        width: 100%;
-        flex-direction: column;
-    }
-
-    nav a{
-        width: 100%;
-        padding-left: 2.5em;
-    }
-        */
 }
 
+@media screen and (min-width:1024px) {
+    .intro{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+    }
+
+    .intro h1{
+        padding-bottom: 5px;
+    }
+    
+    .intro img{
+        width: 90%;
+        height:540px;
+    }
+
+    .about-me{
+        grid-column: 1/-1;
+    }
+
+    .img-gallery{
+        gap: 2.5rem 1rem;
+    }
+
+    .img-gallery img{
+        width: 40vw;
+        max-width: 460px;
+    }
+}
