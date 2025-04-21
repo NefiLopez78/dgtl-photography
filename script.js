@@ -34,7 +34,7 @@ next.onclick = function(){
 }
 
 prev.onclick = function(){
-    if(active -1 > 0){
+    if(active - 1 < 0){
         active = lengthItem;
     }else{
         active = active - 1;
