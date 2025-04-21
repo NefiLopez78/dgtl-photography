@@ -92,6 +92,11 @@ h2{
     font-weight: 500;
 }
 
+h3{
+    font-size: 1.5em;
+    font-weight: 200;
+}
+
 p{
     font-size: 1.5em;
     font-weight: 200;
@@ -475,6 +480,10 @@ footer{
     padding-top: -80px;
 }
 
+footer img{
+    width: 220px;
+}
+
 .foot-ul{
     font-size: 2em;
     letter-spacing: .1em;
@@ -518,6 +527,14 @@ hr{
         height:480px;
     }
 
+    .light-text{
+        text-align: right;
+    }
+
+    .intro-text h3{
+        margin: 0 20px;
+    }
+
     .intro-text{
         max-width: 500px;
     }
@@ -527,7 +544,6 @@ hr{
         height: auto;
         max-height: 500px;
     }
-
 
     .link-img img{
         width: 100%;
@@ -595,7 +611,7 @@ hr{
         font-size: 2.6em;
     }
 
-    .intro-text p{
+    .intro-text h3{
         font-size: 1.75em;
     }
     .container a{
