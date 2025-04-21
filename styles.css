@@ -425,8 +425,8 @@ br{
     border-radius: 5rem;
     box-shadow: var(--box-shadow);
     margin: 50px 25px;
-    transition: .3s ease-in-out;
 }
+
 
 .img-gallery-1:hover, .img-gallery-2:hover, .img-gallery-3:hover, .img-gallery-4:hover{
     -webkit-transform: scale(1.05);
