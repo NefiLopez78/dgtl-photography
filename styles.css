@@ -93,7 +93,7 @@ h2{
 }
 
 h3{
-    font-size: 1.5em;
+    font-size: 1.25em;
     font-weight: 200;
 }
 
@@ -534,6 +534,10 @@ Contact Page CSS
     text-align: left;
 }
 
+.contact-text .light-text{
+    text-align: left;
+}
+
 .contact-container h1{
     font-size: 1.4rem;
     font-weight: 400;
@@ -648,6 +652,7 @@ label, input{
 
     .intro-text h3{
         margin: 0 20px;
+        font-size: 1.5rem;
     }
 
     .intro-text{
@@ -665,6 +670,18 @@ label, input{
         max-width: 300px;
         height: 100%;
         max-height: 360px;
+    }
+
+    /* contact page */
+
+    .contact-container img{
+        width: 100%;
+        max-width: 500px;
+        height:480px;
+    }
+
+    .contact-text{
+        max-width: 500px;
     }
 
 }
@@ -727,7 +744,7 @@ label, input{
     }
 
     .intro-text h3{
-        font-size: 1.75em;
+        font-size: 1.6em;
     }
     .container a{
         padding: 15px 35px;
