@@ -530,7 +530,7 @@ Contact Page CSS
 }
 
 .contact-text{
-    padding: 15px 0;
+    padding: 15px 0 35px 0;
     text-align: left;
 }
 
@@ -538,9 +538,13 @@ Contact Page CSS
     text-align: left;
 }
 
+.contact-container .strong-text{
+    font-weight: 500;
+}
+
 .contact-container h1{
     font-size: 1.4rem;
-    font-weight: 400;
+    font-weight: 100;
     margin-top: 25px;
 }
 
@@ -550,6 +554,8 @@ Contact Page CSS
 
 .contact-form-container{
     background-color: var(--brown);
+    display: grid;
+    justify-items: center;
 }
 
 .contact-form-info{
@@ -618,6 +624,7 @@ label, input{
     width: 100%;
     font-size: 1.2rem;
     font-weight: 200;
+    margin: auto;
   }
 
   input{
@@ -683,6 +690,12 @@ label, input{
     .contact-text{
         max-width: 500px;
     }
+
+    label, input{
+        width: 100%;
+        max-width: 500px;
+        font-size: 1.5rem;
+      }
 
 }
 
@@ -800,4 +813,15 @@ label, input{
         width: 40vw;
         max-width: 460px;
     }
+
+    /* Conatact */
+
+    .contact-container{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contact-form-container{
+        grid-template-columns: 1fr 1fr;
+    }
+
 }
