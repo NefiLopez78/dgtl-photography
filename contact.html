@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="styles.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <title>DGTL photography</title>
+</head>
+<body>
+    <a href="#" class="skip-link">Skip to main content</a>
+    <header style="background-color:#F2EFE9;">
+        <nav role="navigation">
+            <div class="nav-child">
+                <img src="img/logo-1920.png" alt="logo">
+            </div>
+            <ul class="nav-child">
+                <li class="hidden"><a href="#" style="color: #594D3E">Home</a></li>
+                <li class="hidden"><a href="#" style="color: #594D3E">Gallery</a></li>
+                <li class="hidden"><a href="#" style="color: #594D3E">Contact</a></li>
+                <li><i class="fa fa-bars" style="color: #594D3E" title="button to open nav" onclick="on()"></i></li>
+            </ul>
+        </nav>
+    </header>
+
+    <a href="#" class="to-top"><i class="fa-solid fa-circle-chevron-up"></i></a>
+
+    <div id="overlay">
+        <div class="icon-container">
+            <i class="fa fa-times" style="color: #fff;" title="button to close nav" onclick="off()"></i>
+        </div>
+        <div class="overlay-text">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <main>
+        <section class="contact-container">
+            <div class="contact-text">
+                <div class="light-text"><h1>Phoenix, Arizona Photographer<h1></div>
+                <p>'v been doing freeelance photography for about 5 years now
+                    Some photography that i've done goes from landscape, street, sports,
+                    cosplay, portraits events amd recelty fashion.</p> <br>
+                <p>I'v been doing freeelance photography for about 5 years now
+                Some photography that i've done goes from landscape, street, sports,
+                cosplay, portraits events amd recelty fashion.</p>
+            </div>
+            <img src="img/photographer.jpg" alt="photo of the photographer in a dressed shirt and tie">
+        </section>
+
+        <section class="contact-form-container">
+            <div class="contact-form-info">
+                <h1>Contact</h1>
+                <h2>Let's capture the special moment!</h2>
+                <p>dgtlphotographyphx@gmail.com</p>
+            </div>
+            <div class="contact-form">
+                <form action="https://wp.zybooks.com/form-viewer.php" method="post">
+                    <label for="name">Name<span class="required">*</span></label>
+                    <input name="name" type="text" id="name" autocomplete="given-name" required>
+          
+                    <label for="email">Email<span class="required">*</span></label>
+                    <input name="email" type="text" id="email" autocomplete="email" required>
+
+                    <label for="service">Service<span class="required">*</span></label>
+                    <input name="service" type="text" id="service" required>
+
+                    <label for="hear-about">How did you hear about me?<span class="required">*</span></label>
+                    <input name="hear-about" type="text" id="hear-about" required>
+
+                    <label for="message">Message<span class="required">*</span></label>
+                    <input name="message" type="text" id="message" required>
+          
+                    <input type="submit" name="mySubmit" id="mySubmit" value="Submit">
+          
+                  </form>
+            </div>
+        </section>
+
+        <section class="social-media-section">
+            <h1>@DGTL_Photography</h1>
+            <div class="link-img">
+                <a href="https://www.instagram.com/dgtl_photography/" target="_blank" rel="noopener noreferrer"><img src="img/heartsteel.jpg" alt="female model cosplaying from the game league of legends at an alleyway of downtown" ></a>
+                <a href="https://www.instagram.com/dgtl_photography/" target="_blank" rel="noopener noreferrer"><img src="img/seras_victoria.jpg" alt="female model cosplaying seras victoria from hellsing standing on a flight of staris looking at the camera above"></a>
+                <a href="https://www.instagram.com/dgtl_lifestyle/" target="_blank" rel="noopener noreferrer"><img src="img/ana.jpg" alt="quinceanera in a green dress posing with a plam trees in the background with warm colors"></a>
+                <a href="https://www.instagram.com/dgtl_lifestyle/" target="_blank" rel="noopener noreferrer"><img src="img/stop_sign.jpg" alt="male model leaning towards a stopsign being photographed at night in the street with harsh lighting" ></a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <section class="foot-ul">  
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <hr>
+            </section>
+            <img src="img/DGTLPHOTOGRAPHY-logo.png" alt="logo">
+            <section class="social-icon">
+                <a href="#" aria-label="instagram link"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" aria-label="instagram link"><i class="fa-solid fa-envelope"></i></a>
+            </section>
+            <p>&copy;copyright 2025</p>
+        </div>
+    </footer>
+    
+</body>
+</html>

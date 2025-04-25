@@ -167,7 +167,7 @@ header{
     position: absolute;
     color: var(--white);
     z-index: 1;
-    height: 6rem;
+    height: 7.3rem;
     font-weight: 100;
 }
 
@@ -517,6 +517,121 @@ footer img{
 hr{
     display: none;
 }
+
+/*
+Contact Page CSS
+*/
+
+.contact-container{
+    background-color: var(--med-brown);
+    color: var(--brown);
+    display: grid;
+    justify-items: center;
+}
+
+.contact-text{
+    padding: 15px 0;
+    text-align: left;
+}
+
+.contact-container h1{
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-top: 25px;
+}
+
+.intro-text h2{
+    margin: 12px 0;
+}
+
+.contact-form-container{
+    background-color: var(--brown);
+}
+
+.contact-form-info{
+    background-color: var(--light-brown);
+    color: var(--brown);
+    text-align: center;
+    margin-top: -55px;
+}
+.contact-form-info h1{
+    font-size: 2.8rem;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+.contact-form-info p{
+    font-size: 1.3rem;
+    padding-bottom: 40px;
+    padding-top: 15px;
+}
+
+.contact-form{
+    color: var(--light-brown);
+    width: 100%;
+    padding-top: 35px;
+}
+
+#mySubmit{
+    width:fit-content;
+    text-align: center;
+    margin: auto;
+    background-color: var(--light-brown);
+    color: var(--brown);
+    border-radius: 1.7rem;
+    font-weight: 100;
+    padding: 15px 45px;
+    display: block;
+    margin-top: 3rem;
+    font-size: 1.5em;
+    transition: .3s ease-in-out;
+  }
+
+  #mySubmit:hover{
+    -webkit-transform: scale(1.05);
+	transform: scale(1.05);
+}
+  
+  span{
+    font-weight: 600;
+    color: red;
+    padding-left: 3px;
+  }
+
+
+.contact-container img{
+    width: 100%;
+    height:440px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    margin: auto;
+}
+
+label, input{
+    display: block;
+    padding: 7px 0;
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 200;
+  }
+
+  input{
+    outline: none;
+    background-color: transparent;
+    color: var(--light-brown);
+    border: 1px solid var(--brown);
+    border-bottom: 4px solid var(--light-brown);
+    margin-bottom: 20px;
+  }
+/*
+  input:focus{
+    background-color: transparent;
+    border: 1px solid var(--brown);
+    border-bottom: 4px solid var(--light-brown);
+  }
+    */
+
 
 
 
